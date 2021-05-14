@@ -1,0 +1,207 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 4,
+    "identityHash": "369f49232dd5f4fd547236cc52e50c28",
+    "entities": [
+      {
+        "tableName": "workcenter",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`code` TEXT NOT NULL, `name` TEXT, `description` TEXT, PRIMARY KEY(`code`))",
+        "fields": [
+          {
+            "fieldPath": "code",
+            "columnName": "code",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "code"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "workstation",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`code` TEXT NOT NULL, `wcr` TEXT, `description` TEXT, PRIMARY KEY(`code`))",
+        "fields": [
+          {
+            "fieldPath": "code",
+            "columnName": "code",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wcr",
+            "columnName": "wcr",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "code"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "job",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`assignment_code` INTEGER NOT NULL, `operator` TEXT, `wcr` TEXT, `wst` TEXT, `index` INTEGER NOT NULL, `name` TEXT, `visible` INTEGER NOT NULL, `parameters` TEXT, PRIMARY KEY(`assignment_code`))",
+        "fields": [
+          {
+            "fieldPath": "assignmentCode",
+            "columnName": "assignment_code",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "operator",
+            "columnName": "operator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wcr",
+            "columnName": "wcr",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wst",
+            "columnName": "wst",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "index",
+            "columnName": "index",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "visible",
+            "columnName": "visible",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "filterParameters",
+            "columnName": "parameters",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "assignment_code"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "itmmaster",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`itmref` TEXT NOT NULL, `fcy` TEXT, `itmdes` TEXT, `itmsta` INTEGER NOT NULL, `phyall` REAL NOT NULL, `physto` REAL NOT NULL, `reocod` INTEGER NOT NULL, `tclcod` TEXT, `update` INTEGER NOT NULL, PRIMARY KEY(`itmref`))",
+        "fields": [
+          {
+            "fieldPath": "itmref",
+            "columnName": "itmref",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fcy",
+            "columnName": "fcy",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "itmdes",
+            "columnName": "itmdes",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "itmsta",
+            "columnName": "itmsta",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phyall",
+            "columnName": "phyall",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "physto",
+            "columnName": "physto",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "reocod",
+            "columnName": "reocod",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tclcod",
+            "columnName": "tclcod",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "update",
+            "columnName": "update",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "itmref"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"369f49232dd5f4fd547236cc52e50c28\")"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_operator_code"
+        android:inputType="number"
+        android:numeric="integer"
+        android:key="operator_code"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_operator_code" />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_workcenter_list"
+        android:entryValues="@array/pref_workcenter_list_values"
+        android:key="workcenter"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_workcenter" />
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_workstation_list"
+        android:entryValues="@array/pref_workstation_list_values"
+        android:key="workstation"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_workstation" />
+
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_workstation_id"
+        android:inputType="number"
+        android:numeric="integer"
+        android:key="workstation_index"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_workstation_id" />
+
+</PreferenceScreen>

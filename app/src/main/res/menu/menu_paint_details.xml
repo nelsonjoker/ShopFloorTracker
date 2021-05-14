@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pt.sotubo.shopfloortracker.PaintDetailsActivity">
+
+    <item
+        android:id="@+id/action_check_all"
+        android:checked="true"
+        android:icon="?android:attr/textCheckMark"
+        android:iconTint="@android:color/background_light"
+        android:title="Marcar todos"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Eliminar seleccionados"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_save"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="Guardar alterações"
+        app:showAsAction="ifRoom" />
+
+</menu>

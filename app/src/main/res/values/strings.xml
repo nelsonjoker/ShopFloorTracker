@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">ShopFloorTracker</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Definições</string>
+    <string name="action_edit_job">Editar separador</string>
+    <string name="action_new_job">Novo separador</string>
+    <string name="action_delete_job">Eliminar separador</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Definições</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Geral</string>
+
+    <string name="pref_title_operator_code">Código do operador</string>
+    <string name="pref_default_operator_code">000</string>
+
+    <string name="pref_title_workcenter">Centro de produção</string>
+    <string-array name="pref_workcenter_list">
+        <item>COR</item>
+        <item>SOL</item>
+        <item>PIN</item>
+    </string-array>
+    <string-array name="pref_workcenter_list_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="pref_title_workstation">Posto de produção</string>
+    <string-array name="pref_workstation_list">
+        <item>PUNFP</item>
+        <item>BALAN</item>
+    </string-array>
+    <string-array name="pref_workstation_list_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_title_workstation_id">ID do posto</string>
+    <string name="pref_default_workstation_id">0</string>
+
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_new_job">Novo separador</string>
+    <string name="title_activity_edit_job">Editar separador</string>
+
+    <string name="title_activity_tracking_confirm">Confirmar seguimento de fabrico</string>
+
+    <string name="producao">produção</string>
+    <string name="materiais">materiais</string>
+    <string name="duracao_total">Duração total</string>
+    <string name="consumo_de_materiais">Materiais consumidos</string>
+    <string name="artigos_produzidos">Artigos produzidos</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="activity_article_details_title_f">Detalhes do artigo %s</string>
+    <string name="in_stock_f">Em stock: %.2f %s</string>
+
+    <string name="chooser_title">Seleccione a aplicação para abrir este ficheiro</string>
+
+
+    <string name="api_thumbnail_url_format">/audros/thumbnail/%s</string>
+    <string name="api_candidates_url_format">/audros/candidates/%s</string>
+    <string name="api_pdf_url_format">/audros/pdf/%s</string>
+    <string name="detalhes_do_artigo">Detalhes do artigo</string>
+    <string name="filter_plan_per_material">Filtrar operações para este artigo</string>
+    <string name="title_alertmessage_list">Mensagens de alerta</string>
+    <string name="title_alertmessage_detail">Editar mensagens de alerta</string>
+    <string name="p_f">%s</string>
+    <string name="operation_n_for_article_f">A operação nº %d do artigo</string>
+    <string name="thumbnail_not_found">Não foi possível encontrar desenhos para este artigo, tente mais tarde...</string>
+    <string name="title_activity_paint_details">PaintDetailsActivity</string>
+    <string name="activity_paint_details_title">Detalhes da lista de pintura</string>
+    <string name="guardar_separadores">Guardar separadores</string>
+    <string name="recuperar_separadores">Recuperar separadores</string>
+    <string name="usar_como_filtro">Usar como filtro</string>
+</resources>
