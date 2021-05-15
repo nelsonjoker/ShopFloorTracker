@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item
+        android:id="@+id/menu_itmref"
+        android:title="@string/detalhes_do_artigo" />
+    <group android:id="@+id/sohnumList" />
+</menu>

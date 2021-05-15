@@ -1,0 +1,47 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".jobpage.AbstractJobPage">
+
+    <group >
+        <item
+            android:id="@+id/item_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Filtrar"
+            app:actionViewClass="android.support.v7.widget.SearchView"
+            android:inputType="textCapWords"
+            app:showAsAction="always|collapseActionView" />
+    </group>
+    <group>
+
+        <item
+            android:id="@+id/spinnerPjt"
+            app:actionViewClass="android.widget.Spinner"
+            app:showAsAction="always"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:title="plano" />
+        <item
+            android:id="@+id/spinnerEpoxy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:title="cor"
+            app:actionViewClass="android.widget.Spinner"
+            app:showAsAction="always" />
+
+
+
+    </group>
+
+
+    <group >
+        <item
+            android:id="@+id/item_save_tracking"
+            android:title=""
+            android:icon="@android:drawable/ic_menu_save"
+            app:showAsAction="always" />
+    </group>
+</menu>

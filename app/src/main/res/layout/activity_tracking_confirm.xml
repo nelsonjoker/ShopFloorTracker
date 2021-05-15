@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.sotubo.shopfloortracker.TrackingConfirmActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/linearLayoutWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/linearLayoutDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/appbar_padding_top"
+                android:orientation="horizontal"
+                android:weightSum="8"
+                >
+
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4" />
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/cancelar" />
+                <Button
+                    android:id="@+id/buttonOK"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/confirmar" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewItemsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/artigos_produzidos"
+                android:theme="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+                 />
+
+            <TableLayout
+                android:id="@+id/tableTrackingSummaryItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/textViewItemsTitle"
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"
+                    android:gravity="fill_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Artigo"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Descrição"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Qtd. necessária"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Qtd. produzida"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Un."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse" />
+                </TableRow>
+
+
+            </TableLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

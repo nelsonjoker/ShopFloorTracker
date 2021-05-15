@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:alignContent="stretch"
+    app:alignItems="stretch"
+    app:flexWrap="wrap"
+    tools:context="pt.sotubo.shopfloortracker.AlertMessageDetailFragment"
+    android:orientation="vertical"
+    >
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição do problema:" />
+        <EditText
+            android:id="@+id/editTextComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:minLines="3"
+            android:inputType="textMultiLine" />
+
+</LinearLayout>

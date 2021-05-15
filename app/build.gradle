@@ -5,7 +5,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "pt.sotubo.shopfloortracker"
+        applicationId 'com.joker.shopfloortracker'
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 1

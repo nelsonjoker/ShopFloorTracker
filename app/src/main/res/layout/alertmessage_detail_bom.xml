@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:alignContent="stretch"
+    app:alignItems="stretch"
+    app:flexWrap="wrap"
+    tools:context="pt.sotubo.shopfloortracker.AlertMessageDetailFragment"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutWarning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:tint="@android:color/holo_orange_dark"
+            app:srcCompat="@android:drawable/stat_notify_error" />
+
+        <TextView
+            android:id="@+id/textViewWarningMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="É necessário seleccionar pelo menos uma operação"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="12"
+            >
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="A nomenclatura do artigo "
+                android:layout_weight="4"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerItmref"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:dropDownWidth="wrap_content"
+                android:layout_weight="8"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="12"
+            >
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="consome"
+                android:layout_weight="4"
+                />
+
+            <EditText
+                android:id="@+id/editTextQty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:layout_weight="2"
+                />
+            <TextView
+                android:id="@+id/textViewSTU"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/p_f"
+                android:layout_weight="6"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="12"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="do componente"
+                android:layout_weight="4"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerComponent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_weight="8"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/background_dark">
+
+        </View>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comentários adicionais:" />
+        <EditText
+            android:id="@+id/editTextComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:minLines="3"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+</LinearLayout>
